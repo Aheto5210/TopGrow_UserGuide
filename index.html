@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer-Buyer User Guide</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background-color:#F8FFFB; color:#333; line-height:1.6; }
+    header { background-color:#3B8751; color:#FFFFFF; padding:25px 10px; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+    header h1 { margin:0; font-size:1.8rem; }
+    header p { margin:5px 0 0 0; font-size:1rem; opacity:0.9; }
+    nav { background-color:#EAB916; padding:12px; text-align:center; box-shadow:0 2px 4px rgba(0,0,0,0.05); position:sticky; top:0; z-index:1000; }
+    nav a { color:#FFFFFF; text-decoration:none; margin:0 12px; font-weight:600; font-size:0.95rem; transition:0.3s; }
+    nav a:hover { text-decoration:underline; color:#000000; }
+    main { padding:25px 15px; max-width:1000px; margin:auto; }
+    section { margin-bottom:50px; padding:20px; background-color:#FFFFFF; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
+    h2 { color:#3B8751; border-bottom:3px solid #EAB916; padding-bottom:6px; margin-bottom:15px; font-size:1.4rem; }
+    ul { margin:10px 0; padding-left:20px; }
+
+    /* Flex layout for sections */
+    .section-content { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .section-content img { width: 45%; border-radius:8px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+    .section-text { width: 50%; }
+
+    /* Alternate section layout */
+    .section-content.reverse { flex-direction: row-reverse; }
+
+    /* Responsive */
+    @media screen and (max-width:768px) {
+        nav a { display:block; margin:8px 0; font-size:1rem; }
+        .section-content { flex-direction: column; }
+        .section-content img, .section-text { width: 100%; }
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>Farmer-Buyer Platform – User Guide</h1>
+<p>For Farmers & Buyers</p>
+</header>
+<nav>
+<a href="#login">Login</a>
+<a href="#farmer">Farmer Features</a>
+<a href="#buyer">Buyer Features</a>
+<a href="#payment">Payment & Orders</a>
+<a href="#profile">Profile</a>
+<a href="#tips">Tips & FAQs</a>
+</nav>
+<main>
+
+<section id="login">
+<h2>Logging In</h2>
+<div class="section-content">
+<div class="section-text">
+<ul>
+<li>Open the app and enter your mobile number.</li>
+<li>Enter the OTP received via SMS to login.</li>
+</ul>
+</div>
+<img src="Images/Login.png" alt="Login Screen">
+</div>
+<div class="section-content reverse">
+<div class="section-text">
+<p>After entering your mobile number, an OTP will be sent. Enter it to verify and access your account.</p>
+</div>
+<img src="Images/OTP.png" alt="OTP Verification">
+</div>
+</section>
+
+<section id="farmer">
+<h2>Farmer Features</h2>
+<div class="section-content">
+<div class="section-text">
+<ul>
+<li>Add Product: Fill in name, price, quantity, location → Save.</li>
+<li>Edit/Delete Product: Go to "My Products" and select a product.</li>
+<li>View All Products: Browse the store and use search/filters.</li>
+<li>Track Orders: See buyer info, product, quantity, total price, and status.</li>
+<li>Update Order Status: Mark as processing, completed, or cancelled.</li>
+</ul>
+</div>
+<img src="Images/Addproduct.png" alt="Add Product Form">
+</div>
+<div class="section-content reverse">
+<div class="section-text">
+<p>Farmers can manage their products and orders efficiently. The platform updates buyers automatically when the status changes.</p>
+</div>
+<img src="Images/OrdersList.png" alt="Orders List">
+</div>
+</section>
+
+<section id="buyer">
+<h2>Buyer Features</h2>
+<div class="section-content">
+<div class="section-text">
+<ul>
+<li>Browse Products: Use search and filters in the store.</li>
+<li>Show Interest: Click "Interested" on a product and contact the farmer.</li>
+<li>Track Orders: Check order list with status: pending, paid, processing, completed, cancelled.</li>
+</ul>
+</div>
+<img src="Images/Productlist.png" alt="Product List">
+</div>
+<div class="section-content reverse">
+<div class="section-text">
+<p>Buyers can easily browse products and express interest. Order tracking keeps them informed about payment and delivery.</p>
+</div>
+<img src="Images/Myorders.png" alt="My Orders">
+</div>
+</section>
+
+<section id="payment">
+<h2>Payment & Order Tracking</h2>
+<div class="section-content">
+<div class="section-text">
+<ul>
+<li>Make Payment: Select product → Pay Now → Enter card details → Complete payment.</li>
+<li>Payment Status: Automatically updated in the order list for both buyer and farmer.</li>
+<li>Order Status: Updated by farmer after processing or completing the order.</li>
+</ul>
+</div>
+<img src="Images/payment.png" alt="Payment Screen">
+</div>
+<div class="section-content reverse">
+<div class="section-text">
+<p>Payments are secure and automatically reflected in the system. Both parties are notified about order progress in real-time.</p>
+</div>
+<img src="Images/OrderStatus.png" alt="Order Status">
+</div>
+</section>
+
+<section id="profile">
+<h2>Profile Management</h2>
+<div class="section-content">
+<div class="section-text">
+<ul>
+<li>Update name and mobile number from "Profile".</li>
+<li>Switch between Buyer/Farmer mode.</li>
+</ul>
+</div>
+<img src="Images/Profile.png" alt="Profile Editing">
+</div>
+</section>
+
+<section id="tips">
+<h2>Tips & FAQs</h2>
+<div class="section-text">
+<ul>
+<li>Payment fails → Retry or check internet connection.</li>
+<li>Farmer hasn’t updated status → Refresh order page.</li>
+<li>All paid orders appear as "Paid" for both buyer and farmer.</li>
+</ul>
+</div>
+</section>
+
+</main>
+</body>
+</html>
